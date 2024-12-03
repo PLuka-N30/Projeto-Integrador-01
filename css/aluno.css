@@ -1,0 +1,122 @@
+:root {
+    /* Color */
+    --black: #0000;
+    --white: #FFFF;
+    --light-grey: #d9d9d9;
+    --grey-green: #5b716f;
+    --dark-green: #0f241d;
+    --green: #44884d;
+    --light-green: #52a96f;
+
+        /* Transição */
+        --transition-1: 0.25s ease;
+        --transition-2: 0.50s ease;
+        --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
+}
+
+/* Tags - Elementos */
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+/* Área do Aluno */
+
+.area-aluno {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.painel-boas-vindas {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.painel-boas-vindas h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.painel-boas-vindas p {
+    color: #777;
+}
+
+.informacoes-gerais {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.box-info {
+    flex: 1;
+    min-width: 250px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+}
+
+.box-info h3 {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.box-info p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #52a96f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #5b716f;
+}
+
+.back {
+    align-items: center;
+}
+
+/* Voltar */
+
+.back {
+    align-items: center;
+}
+
+.black-top-btn {
+    position: fixed;
+    align-items: center;
+    bottom: 10px;
+    right: 20px;
+    background-color: var(--light-green);
+    color: var(--white);
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    z-index: 4;
+    transition: var(--transition-1);
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+.black-top-btn:is(:hover, :focus) {
+    color: #000000;
+}

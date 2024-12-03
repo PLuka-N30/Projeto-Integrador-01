@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Muscle & Motion</title>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+        <!-- Link CSS -->
+        <link rel="stylesheet" href="css/index.css">
+
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <!-- Preload -->
+        <link rel="preload" as="image" href="img/banner.jpg">
+
+        <!-- Javascript -->
+        <script src="js/index.js"></script>
+
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <div id="top"></div>
+
+        <!-- Banner -->
+        <main>
+            <article>
+                <section class="section hero has-before has-bg-image" id="home" aria-label="home" style="background-image: url('img/banner.jpg');">
+                    <!-- Header/Menu -->
+                    <header class="header">
+                        <div class="header-bottom">
+                            <div>
+                                <img class="logo container" src="img/logo.png" alt="">
+                            </div>
+
+                            <div class="container">
+                                <nav class="navbar container">
+                                    <ul class="navbar-list none">
+                                        <li class="navbar-item">
+                                            <a href="index.html" class="navbar-link">Home</a>
+                                        </li>
+
+                                        <li class="navbar-item">
+                                            <a href="planos.html" class="navbar-link">Planos</a>
+                                        </li>
+
+                                        <li class="navbar-item">
+                                            <a href="login.html" class="navbar-link">Login</a>
+                                        </li>
+
+                                        <div class="bottom">
+                                            <li class="navbar-item">
+                                                <a href="aluno.html" class="navbar-link-2">
+                                                    <span>Área do Aluno</span>
+                                                    <ion-icon name="arrow-up-outline"></ion-icon>
+                                                </a>
+                                            </li>
+                                        </div>
+
+                                        <div class="bottom">
+                                            <li class="navbar-item">
+                                                <a href="cadastro.html" class="navbar-link-2">
+                                                    <span>Cadastre-se</span>
+                                                    <ion-icon name="person-outline"></ion-icon>
+                                                </a>
+                                            </li>
+                                        </div>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </header>
+
+                    <!-- Banner -->
+                    <div class="container">
+                        <h1 class="h1 hero-title">Descubra a <br> 
+                            Experiência <br>
+                            Muscle & Motion
+                        </h1>
+                    </div>
+                </section>
+            </article>
+        </main>
+
+        <div class="divisoria"></div>
+
+        <!-- Matricule-se -->
+        <div class="introduction">
+            <div class="secao01">
+                <h3 class="font-h3">Por que se</h3>
+                <h1 class="font-h1">matricular?</h1>
+
+                <p class="text">
+                Só a Muscle & Motion reúne tudo que você precisa <br>
+                para não ter mais desculpas para não evoluir: <br>
+                profissionais  espalhados por todo Brasil,  atendem <br>
+                24h, todos os dias da semana e com mais de 30 <br>
+                modalidades diferentes por um preço acessível. <br>
+                Escolha como, onde e quando se movimentar.
+                </p>
+            </div>
+
+            <div class="secao02">
+                <h3 class="font-h3 lh">Matricule-se</h3>
+                <h1 class="font-h1">hoje mesmo!</h1>
+
+                <ul class="cadastro">
+                    <li class="opcoes">
+                        <span>Estados</span>
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </li>
+
+                    <li class="opcoes">
+                        <span>Cidades</span>
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </li>
+
+                    <li class="opcoes">
+                        <span>Unidades</span>
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </li>
+
+                    <li class="navbar-item bottom-2">
+                        <a href="planos.html" class="navbar-link-3">
+                            <span>Matricule-se agora mesmo!</span>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="line">
+        <hr class="line">
+
+        <div class="divisoria"></div>
+
+        <!-- Serviços -->
+        <div class="serviços">
+            <h3 class="font-h3">Confira nossos</h3>
+            <h1 class="font-h1">serviços</h1>
+        </div>
+
+        <div class="divisoria"></div>
+
+        <div class="carousel">
+            <div class="carousel-track">
+                <div class="carousel-slide">
+                    <img class="img-carrossel" src="img/acompanhamento-personal.png" alt="Imagem 1">
+                    <div class="caption">Monitoramento de Progresso</div>
+                </div>
+
+                <div class="carousel-slide">
+                    <img class="img-carrossel" src="img/treino-personalizado.png" alt="Imagem 2">
+                    <div class="caption">Treinos Personalizados</div>
+                </div>
+                
+                <div class="carousel-slide">
+                    <img class="img-carrossel" src="img/nutricionista.png" alt="Imagem 3">
+                    <div class="caption">Acompanhamento Nutricional</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-buttons">
+            <button onclick="changeSlide(-1)">❮</button>
+            <button onclick="changeSlide(1)">❯</button>
+        </div>
+
+        <div class="divisoria"></div>
+
+        <!-- Sobre nós -->
+        <div class="sobre-nos">
+            <img src="img/sobre-nos.jpg" alt="">
+
+            <div class="texto-sobre">
+                <h2 class="h2-sobre">Sobre nós</h2>
+
+                <p class="p-sobre">
+                    Bem-vindo à Muscle & Motion! Nossa missão é clara:
+                    transformar vidas por meio da saúde e do bem-estar.
+                    Sabemos que a obesidade e o sedentarismo são desafios
+                    que muitos enfrentam, e estamos aqui para mudar essa
+                    realidade. <br> Acreditamos que o acesso à saúde é um direito
+                    humano fundamental, e trabalhamos para garantir que
+                    todos tenham a oportunidade de viver uma vida
+                    mais ativa e saudável.
+                </p>
+            </div>
+        </div>
+
+        <hr class="line">
+        <hr class="line">
+
+        <div class="divisoria"></div>
+
+        <!-- Suplementos -->
+        <section class="categoria-suplementos">
+            <h1 class="suplementos-h1">Escolha seus Suplementos</h1>
+            <p class="suplementos-p">Encontre o suplemento ideal para você de forma prática e rápida. Selecione a categoria que melhor atende aos seus objetivos!</p>
+
+            <a href="#">
+                <div class="categorias">
+                    <div class="categoria-item">
+                        <h2>Emagrecimento</h2>
+                        <p>Para perder peso de forma saudável e eficiente.</p>
+                    </div>
+
+                    <div class="categoria-item">
+                        <h2>Ganho de Massa Muscular</h2>
+                        <p>Para aumentar a massa muscular e melhorar o desempenho.</p>
+                    </div>
+
+                    <div class="categoria-item">
+                        <h2>Saúde e Bem-estar</h2>
+                        <p>Para manter o corpo e a mente saudáveis.</p>
+                    </div>
+
+                    <div class="categoria-item">
+                        <h2>Desempenho e Energia</h2>
+                        <p>Para mais disposição no treino e no dia a dia.</p>
+                    </div>
+
+                    <div class="categoria-item">
+                        <h2>Saúde Digestiva</h2>
+                        <p>Para melhorar a digestão e absorção de nutrientes.</p>
+                    </div>
+                </div>
+            </a>
+        </section>
+
+        <!-- Redes Sociais -->
+        <section class="redes-sociais">
+            <h2>Acompanhe nossas Redes Sociais</h2>
+            <div class="icones-redes">
+                <a href="https://www.instagram.com/" target="_blank" class="icone-instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/" target="_blank" class="icone-youtube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.tiktok.com/pt-BR/" target="_blank" class="icone-tiktok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+        </section>
+
+        <div class="divisoria"></div>
+
+        <!-- Endereço - Sede -->
+        <div class="sede">
+            <p class="sede-p">
+                Avenida Bahia, 1739 - Indaiá, Caraguatatuba/SP, 11665-071
+            </p>
+        </div>
+
+        <a href="#top" class="black-top-btn">
+            <ion-icon name="chevron-up"></ion-icon>
+        </a>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 Muscle & Motion. Todos os direitos reservados. | Design e Desenvolvimento por Grupo 06</p>
+
+            <ul>
+                <li><a href="planos.html">Escolha o seu Plano Ideal</a></li>
+                <li><a href="cadastro.html">Cadastre-se</a></li>
+            </ul>
+        </footer>
+
+        <!-- Script -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
